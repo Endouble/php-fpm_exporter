@@ -15,6 +15,7 @@
 package phpfpm
 
 import (
+	"fmt"
 	"sync"
 	"fmt"
 	"github.com/prometheus/client_golang/prometheus"
