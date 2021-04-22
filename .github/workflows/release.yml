@@ -8,7 +8,7 @@ jobs:
     steps:
 
     - name: Setup Node.js for use with actions
-      uses: actions/setup-node@v2.1.2
+      uses: actions/setup-node@v2.1.5
 
     - name: Checkout
       uses: actions/checkout@v2
@@ -48,7 +48,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASS }}
 
       - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v2.2.1
+        uses: goreleaser/goreleaser-action@v2.5.0
         with:
           version: latest
           args: release --rm-dist
